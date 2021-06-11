@@ -6,7 +6,6 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./nova-transferencia.component.scss'],
 })
 export class NovaTransferenciaComponent {
-
   @Output() aoTransferir = new EventEmitter<any>();
 
   valor: number | undefined;
@@ -20,7 +19,6 @@ export class NovaTransferenciaComponent {
     this.aoTransferir.emit(valorEmitir);
 
     this.limparCampos();
-
   }
 
   limparCampos() {
